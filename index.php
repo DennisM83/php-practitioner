@@ -33,4 +33,6 @@ $tasks = [
     new Task('Clean my room'),
 ];
 
+$tasks[0]->complete();
+
 require 'index.view.php';
