@@ -1,23 +1,24 @@
 <?php
 
+declare (strict_types = 1);
+
+require 'functions.php';
+
 class Task
 {
 
     protected $description;
 
-    protected $completed;
+    protected $completed = false;
 
-    public function __contruct($description)
+    public function __construct(string $description)
     {
         $this->description = $description;
     }
-
-    public function complete()
-    {
-
-    }
 }
 
-$task = new Task('Go to the store');
+$el = new Task('Go to the store');
+
+var_dump($el);
 
 require 'index.view.php';
